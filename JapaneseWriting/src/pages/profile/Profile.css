@@ -1,27 +1,41 @@
 p {
   padding: 0;
   margin: 0;
+  font-family: 'Centra';
+  font-weight: 700;
+}
+
+
+
+.background {
+    margin-top: 0;
+    padding: 150px 0 100px 0;
+    background-image: url('../..//assets/img/home-background.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 5fr 2fr;
-  margin-top: 3rem;
+  grid-template-columns: 6fr 2fr;
+  margin-top: 1rem;
 }
 
 .left_container {
-  background-color: red;
+  background-color: transparent
 }
 
 .right_container {
-  background-color: aqua;
-  display: flex;
-  justify-content: flex-end;
+  background-color: transparent;
+  position: fixed;
+  right: 3rem;
+
   padding-bottom: 3rem;
 }
 
 .user_container {
-  background-color: white;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 220px 1fr;
 }
@@ -35,8 +49,12 @@ p {
 .user_profile {
   height: 170px;
   margin-left: 3rem;
-  border-radius: 20px;
 }
+
+
+
+
+/* FRIENDS LIST */
 
 .username,
 .friends_list {
@@ -46,7 +64,7 @@ p {
 }
 
 .friends_list {
-  padding-right: 1.5rem;
+  text-align: center;
 }
 .join_date {
   color: rgb(71, 71, 71);
@@ -63,33 +81,78 @@ p {
   border-radius: 10px;
 }
 
-.friend_profile {
-
-}
-.friend_grid {
-  display: flex;
-  margin-top: 1rem;
-}
-
 .friends_list_container {
-  background-color: white;
-  padding-top: 0.3rem;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  margin-right: 1.8rem;
-  padding-top: 1rem;
-  min-height: 500px;
+  
+  background-color: rgba(0,0,0,0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 50px;
-  min-width: 250px;
+  width: 250px;
 }
 
-.friend_name {
-  margin-top: 17px;
-  padding-left: 5px;
+
+/* TRAIT MASTERY */
+
+.vocab_container {
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+.lang_container {
+  margin: 0rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+ 
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+}
+
+.lang_count {
+  text-align: center;
+  padding-top: 2.6rem;
+}
+
+.lang_type {
+  text-align: center;
+}
+
+.vocab_title {
+  display: inline-block;
+  margin-top: 4rem;
+  margin-left: 4rem;
   font-size: 23px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  padding: 0.5rem 0.5rem;
 }
 
-.friend_name_container {
 
+/* ACHIEVEMENTS */
+
+.achievement_title {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  font-size: 23px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  padding: 0.5rem 0.5rem;
+}
+
+.badge_container {
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+.badge img {
+  height: 200px;
+}
+
+.badge p {
+  color: black;
+  font-size: 20px;
 }
