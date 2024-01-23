@@ -2,7 +2,7 @@ import React from 'react'
 import "./Profile.css"
 import user from '../../assets/img/default_user.png'
 import badge from '../../assets/img/badge.png'
-
+import User from '../../components/user/User';
 
 function profile() {
   return (
